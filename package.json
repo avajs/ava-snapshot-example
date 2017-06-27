@@ -1,0 +1,26 @@
+{
+	"scripts": {
+		"test": "ava"
+	},
+	"dependencies": {
+		"@ava/babel-preset-stage-4": "^1.0.0",
+		"babel-preset-react": "^6.22.0",
+		"react": "^15.4.2"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"react-test-renderer": "^15.6.1"
+	},
+	"ava": {
+		"require": [
+			"babel-register"
+		],
+		"babel": "inherit"
+	},
+	"babel": {
+		"presets": [
+			"@ava/stage-4",
+			"react"
+		]
+	}
+}
